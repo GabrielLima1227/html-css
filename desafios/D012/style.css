@@ -10,31 +10,74 @@
 *{
     margin: 0px;
     padding: 0px;
+    font-size: 1em;
+}
+html,body{
+    min-height: 100vh;
+    background-color: darkgrey;
+    font-family: var(--font01);
 }
 header{
     color: white;
-    height: 185px;
     text-align: center;
     background-color: black;
     font-family: var(--font01);
-
 }
 header > h1{
-    text-transform: uppercase;
+    /*Essa não é a melhor maneira de fazer isso*/
+    /*A melhor maneria seria usando Medias Query*/
+    font-size: 10vw;
+    font-variant: small-caps;
     font-family: var(--font02);
-    padding: 45px 35px 0px 35px;
+    padding-top: 50px;
 }
-a{
+header > p{
+    padding-bottom: 50px;
+}
+header a, footer a{
     color: white;
     font-weight: bolder;
     text-decoration: none;  
 }
-a:hover{
+header a:hover, footer a:hover{
     text-decoration: underline;
 }
-article > p{
-    margin: 40px 25px;
+section{
+    line-height: 2em;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
     font-family: var(--font03);
+    padding-left: 30px;
+    /*Esses valores de vw são em %*/
+    font-size: 3.5vw;
+}
+section > p{
+    padding-bottom: 2em;
+}
+section.comum{
+    background-color: white;
+    color: black;
+}
+section.background{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.307);
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.451);
+    background-size: cover;
+    background-attachment: fixed;
+}
+section.background > p{
+    padding: 5px;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.514);
+    text-shadow: 1px 1px 0px black;
+}
+section#flores{
+    background-image: url(imagens/background001.jpg);
+    background-position: right center;
+}
+section#páginas{
+    background-image: url(imagens/background002.jpg);
+    background-position: right center;
 }
 footer{
     height: 20px;
