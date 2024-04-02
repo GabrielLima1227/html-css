@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas </title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            width: 500px;
+            border-collapse: collapse;
+        }
+        th,td{
+            padding: 5px;
+            border: 1px solid black;
+        }
+        thead, tfoot{ /*Nós Ultilizamos de "," para fazer alterações em várias tags ao mesmo tempo!*/
+            color: white;
+            background-color: grey;
+        }
+        tr.destaque{
+            background-color: lightgrey;
+        }
+        tr.destaque:hover{
+            font-weight: bolder;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de Tabelas Grandes</h1>
+    <!--Anatomia Para Tabelas Grandes
+        Table
+            THead
+                Tr,Td,Th 
+            TBody
+                Tr,Td,Th
+            TFoot
+                Tr,Td,Th
+    -->
+    <Table>
+        <Thead>
+            <tr>
+                <!--Ultilizamos Th e não Td pois essa parte se trata de um Título.-->
+                <th>Estado</th>
+                <th>População</th>
+            </tr>
+        </Thead>
+        <Tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td>45.919.049</td>
+            </tr>
+            <tr class="destaque">
+                <td>Minas Gerais</td>
+                <td>21.168.791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td>17.264.943</td>
+            </tr>
+            <tr class="destaque">
+                <td>Bahia</td>
+                <td>14.843.064</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td>11.433.957</td>
+            </tr>
+            <tr class="destaque">
+                <td>Rio Grande do Sul</td>
+                <td>11.377.239</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td>9.557.071</td>
+            </tr>
+            <tr class="destaque">
+                <td>Ceará</td>
+                <td>9.132.078</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td>8.602.865</td>
+            </tr>
+            <tr class="destaque">
+                <td>Santa Catarina</td>
+                <td>7.174.788</td>
+            </tr>
+        </Tbody>
+        <Tfoot>
+            <th>Total de habitantes</th>
+            <td>0000000</td>
+        </Tfoot>
+    </Table>
+</body>
+</html>
