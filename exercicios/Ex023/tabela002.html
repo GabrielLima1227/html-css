@@ -8,9 +8,21 @@
         body{
             font-family: Arial, Helvetica, sans-serif;
         }
+        h1{
+            text-align: center;
+        }
         table{
             width: 500px;
             border-collapse: collapse;
+            margin: auto;
+            position: relative;
+        }
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgrey;
+            border-radius: 5px 5px 0px 0px;
         }
         th,td{
             padding: 5px;
@@ -18,13 +30,18 @@
         }
         thead, tfoot{ /*Nós Ultilizamos de "," para fazer alterações em várias tags ao mesmo tempo!*/
             color: white;
-            background-color: grey;
+            background-color: #383838;
         }
-        tr.destaque{
+        thead > tr > th{
+            /*Sticky = Colavel*/
+            position: sticky;
+            top: -1px;
+            background-color: #383838;
+            border-radius: 5px 5px 0px 0px;
+        }
+        /*Essa é uma Pseudo-classe é utilizada para selecionar elementos com base na sua posição relativa dentro de um elemento pai.*/
+        tbody > tr:nth-child(2n){
             background-color: lightgrey;
-        }
-        tr.destaque:hover{
-            font-weight: bolder;
         }
     </style>
 </head>
@@ -32,6 +49,8 @@
     <h1>Uso de Tabelas Grandes</h1>
     <!--Anatomia Para Tabelas Grandes
         Table
+            Capition
+
             THead
                 Tr,Td,Th 
             TBody
@@ -40,58 +59,133 @@
                 Tr,Td,Th
     -->
     <Table>
+        <!--Legenda da Tabela-->
+        <caption>População das Unidades Federativas</caption>
         <Thead>
             <tr>
                 <!--Ultilizamos Th e não Td pois essa parte se trata de um Título.-->
-                <th>Estado</th>
-                <th>População</th>
+
+                <!--O Scope serve para relacionar os th com os td, dizendo a orientação deles.-->
+
+                <!--Se estão na mesma col = coluna, row = linha-->
+
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
         </Thead>
         <Tbody>
             <tr>
                 <td>São Paulo</td>
-                <td>45.919.049</td>
+                <td class = "num">44.411.238	</td>
             </tr>
-            <tr class="destaque">
+            <tr>
                 <td>Minas Gerais</td>
-                <td>21.168.791</td>
+                <td class = "num">20.538.718</td>
             </tr>
             <tr>
                 <td>Rio de Janeiro</td>
-                <td>17.264.943</td>
+                <td class = "num">16.054.524</td>
             </tr>
-            <tr class="destaque">
+            <tr>
                 <td>Bahia</td>
-                <td>14.843.064</td>
+                <td class = "num">14.141.626</td>
             </tr>
             <tr>
                 <td>Paraná</td>
-                <td>11.433.957</td>
+                <td class = "num">11.444.380</td>
             </tr>
-            <tr class="destaque">
+            <tr>
                 <td>Rio Grande do Sul</td>
-                <td>11.377.239</td>
+                <td class = "num">10.882.965</td>
             </tr>
             <tr>
                 <td>Pernambuco</td>
-                <td>9.557.071</td>
+                <td class = "num">9.058.931</td>
             </tr>
-            <tr class="destaque">
+            <tr>
                 <td>Ceará</td>
-                <td>9.132.078</td>
+                <td class = "num">8.794.957</td>
             </tr>
             <tr>
                 <td>Pará</td>
-                <td>8.602.865</td>
+                <td class = "num">8.121.025</td>
             </tr>
-            <tr class="destaque">
+            <tr>
                 <td>Santa Catarina</td>
-                <td>7.174.788</td>
+                <td class = "num">7.610.361</td>
+            </tr>
+            <tr>
+                <td>Goiás</td>
+                <td class = "num">7.610.361</td>
+            </tr>
+            <tr>
+                <td>Maranhão</td>
+                <td class = "num">6.775.805</td>
+            </tr>
+            <tr>
+                <td>Paraíba</td>
+                <td class = "num">3.974.687</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td class = "num">3.941.613</td>
+            </tr>
+            <tr>
+                <td>Espírito Santos</td>
+                <td class = "num">3.833.712</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso</td>
+                <td class = "num">3.658.649</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Norte</td>
+                <td class = "num">3.302.729</td>
+            </tr>
+            <tr>
+                <td>Piauí</td>
+                <td class = "num">3.271.199</td>
+            </tr>
+            <tr>
+                <td>Alagoas</td>
+                <td class = "num">3.127.683</td>
+            </tr>
+            <tr>
+                <td>Distrito Federal</td>
+                <td class = "num">2.817.381</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso do Sul</td>
+                <td class = "num">2.757.013</td>
+            </tr>
+            <tr>
+                <td>Sergipe</td>
+                <td class = "num">2.209.558</td>
+            </tr>
+            <tr>
+                <td>Rondônia</td>
+                <td class = "num">1.581.196</td>
+            </tr>
+            <tr>
+                <td>Tocantins</td>
+                <td class = "num">1.511.460</td>
+            </tr>
+            <tr>
+                <td>Acre</td>
+                <td class = "num">830.018</td>
+            </tr>
+            <tr>
+                <td>Amapá</td>
+                <td class = "num">733.759</td>
+            </tr>
+            <tr>
+                <td>Roraima</td>
+                <td class = "num">636.707</td>
             </tr>
         </Tbody>
         <Tfoot>
-            <th>Total de habitantes</th>
-            <td>0000000</td>
+            <th scope="row">Total de habitantes</th>
+            <td>210.147.125</td>
         </Tfoot>
     </Table>
 </body>
