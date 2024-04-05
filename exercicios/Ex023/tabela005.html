@@ -20,10 +20,22 @@
         th,td{
             border: 1px solid black;
         }
+        col.cnome{
+            background-color: lightgreen;
+        }
+        col.csexo, col.cidade{
+            background-color: lightyellow;
+        }
     </Style>
 </head>
 <body>
     <table>
+        <colgroup>
+            <col class="cnome">
+            <col class="csexo">
+            <col class="cidade">
+            <col class="cprof">
+        </colgroup>
         <caption>Cadastro</caption>
         <tr>
             <th scope="col">Nome</th>
@@ -36,6 +48,36 @@
             <td>F</td>
             <td>25</td>
             <td>Jornalista</td>
+        </tr>
+        <tr>
+            <td>João Guilherme</td>
+            <td>M</td>
+            <td>23</td>
+            <td>Engenheiro</td>
+        </tr>
+        <tr>
+            <td>Victor Santos</td>
+            <td>M</td>
+            <td>19</td>
+            <td>Técnico Bancario</td>
+        </tr>
+        <tr>
+            <td>Sara Lima</td>
+            <td>F</td>
+            <td>23</td>
+            <td>Enfermeira</td>
+        </tr>
+        <tr>
+            <td>Maria Luiza</td>
+            <td>F</td>
+            <td>26</td>
+            <td>Biologa</td>
+        </tr>
+        <tr>
+            <td>Bruna Raquel</td>
+            <td>F</td>
+            <td>21</td>
+            <td>Progamadora</td>
         </tr>
     </table>
 </body>
