@@ -1,3 +1,11 @@
 @charset "UTF-8";
 
 /*Configurações Gerais*/
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+html, body{
+
+}
