@@ -15,14 +15,14 @@ header > h1{
     padding: 10px;
     text-align: center;
 }
-span#burger{
+span#burguer{
     padding: 10px;
     color: white;
     display: block;
     text-align: center;
     background-color: rgb(48, 48, 48);
 }
-span#burger:hover{
+span#burguer:hover{
     color: black;
     cursor: pointer;
     background-color: white;
