@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos com HTML5</title>
+</head>
+<body>
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>Este vídeo está hospedado em meu próprio servidor.</p>
+    <video width="560px" poster="img/limoes-capa.png" controls>
+        <source src="media/meu-video.mp4" type="video/mp4">
+        <source src="media/meu-video.webm" type="video/webm">
+        <source src="media/meu-video.ogv" type="video/ogg">
+    </video>
+
+    <h1>Inserindo Vídeos do YouTube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/OzUnqQk4eOg?si=pzpDUQzflBaEbaAY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <h1>Inserindo Vídeo do Vimeo</h1>
+    <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/185871317?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Simone Cirillo - 2016 Character Animation Reel"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+</body>
+</html>
