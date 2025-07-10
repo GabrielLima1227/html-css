@@ -1,12 +1,21 @@
 @charset "URF-8";
 @font-face {font-family: "idroid"; src: url(../font/idroid.otf);}
+/* 
+Paleta de cores do projeto, da mais clara à mais escura:
+#c5ebd6
+#83e1ad
+#3ddc84
+#2fa866
+#1a5c37
+#063d1e
+*/
 body{
     margin: 0px;
-    background-color: #84E1AD;
+    background-color: #c5ebd6;
     font-family: Arial, Helvetica, sans-serif;
 }
 header{
-    background-image: linear-gradient(to bottom, #84E1AD, #1A5C38);
+    background-image: linear-gradient(to bottom, #3ddc84, #063d1e);
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
     padding: 20px 5px 0px 5px;
     text-align: center;
@@ -39,21 +48,21 @@ main{
     max-width: 900px;
     min-width: 500px;
     margin: auto;
-    border-radius: 0px 10px;
+    border-radius: 0px 0px 10px 10px;
 }
 section{
     padding: 30px 20px;
 }
 #title, .subtitle{
     font-family: "idroid";
-    color: #1A5C38;
+    color: #063d1e;
     margin: 0px;
 }
 #title{
     font-size: 1.75rem;
 }
 .subtitle{
-    background-image: linear-gradient(to right, #76ca9bc7, white);
+    background-image: linear-gradient(to right, rgba(47, 168, 101, 0.5), rgba(131, 225, 173, 0.5));
     border-radius: 5px;
     padding: 5px;
 }
@@ -69,55 +78,82 @@ p{
     text-decoration: none;
     color: #1A5C38;
     font-weight: 700;
-    transition: text-decoration 0.75s ease-in-out, color 0.75s ease-in-out;
+    transition: background-color 0.75s ease-in-out, color 0.75s ease-in-out, border-radius 0.75s ease-in-out, color 0.75s ease-in-out;
 }
 .text-link::after{
     content: '\1F517' ;
 }
 .text-link:hover{
-    color: #048a40;
-    text-decoration: underline;
+    padding: 2px;
+    color: white;
+    border-radius: 5px;
+    background-color: #2fa866;
+}
+img{
+    width: 100%;
 }
 picture > img{
     text-align: center;
 }
+.bugdroid{
+    width: 350px;
+    margin: auto;
+    display: block;
+}
 .portraid{
     text-align: center;
 }
-article{
-    background-color: #1A5C38;
-    text-align: center;
-    padding: 10px;
+.video{
+    background-color: #063d1e;
+    padding: 20px;
+    margin: 0px -20px 30px -20px;
+    position: relative;
+    padding-bottom: 57%;
 }
-iframe{
-    display: block;
-    margin: 0 auto;
+.video > iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
 }
 aside{
     margin: 10px 0px;
     border-radius: 10px;
-    background-color: #84e1ac8a;
+    background-color: #83e1ad;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.250);
 }
 .aside-title{
     margin: 0px;
-    padding: 5px;
+    padding: 10px;
     color: white;
     font-weight: bold;
-    background-color: #048a40;
+    background-color: #1a5c37;
     border-radius: 10px 10px 0px 0px;
 }
 .aside-content{
     padding: 0px 10px 10px 10px;
 }
+aside > div > ul{
+    list-style-type: '\2714\00A0\00A0';
+    list-style-position: inside;
+    columns: 2;
+}
 footer{
-    margin: 0px;
-    background-color: #1A5C38;
+    margin-top: 20px;
     color: white;
+    background-color: #1A5C38;
 }
 footer > p{
+    margin: 0px;
     text-align: center;
 }
 footer > p > a{
-    text-decoration: none;
     color: white;
+    text-decoration: none;
+    transition: text-decoration 0.75s ease-in-out, color 0.75s ease-in-out;
+}
+footer > p > a:hover{
+    color: #3ddc84;
+    text-decoration: underline;
 }
