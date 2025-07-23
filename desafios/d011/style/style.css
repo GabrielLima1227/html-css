@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#container{
+    height: 100vh;
+    position: relative;
+    background: black url(../img/espaco.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+.conteudo{
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 200px;
+    position: absolute;
+    background-size: 100% 100%;
+    transform: translate(-50%, -50%);
+    background-image: url(../img/astronauta.png);
+}
