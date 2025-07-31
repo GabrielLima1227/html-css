@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout na Prática</title>
+    <style>
+        div.container{
+            display: grid;
+            grid-template-columns: Auto Auto Auto;
+            grid-template-rows: Auto Auto Auto;
+            gap: 10px;
+            align-items: normal;
+            justify-items: normal;
+            align-content: normal;
+            justify-content: normal;
+
+            height: 250px;
+            border: 2px dashed blue;
+        }
+        div.item{
+            padding: 5px;
+            border: 1px dashed red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+        <div class="item">H</div>
+    </div>
+</body>
+</html>
